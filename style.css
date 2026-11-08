@@ -1,0 +1,635 @@
+
+/* CONFIGURAÇÕES GERAIS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #c4b89c;
+    color: #111111;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* CABEÇALHO */
+
+.cabecalho {
+    width: 100%;
+    min-height: 58px;
+    padding: 30px 45px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border-bottom: 1px solid #593b2b;
+    position: relative;
+}
+
+/* MENU */
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #777777;
+
+    font-size: 15px;
+    font-weight: 400;
+
+    transition: color 0.3s ease;
+}
+
+.menu a:hover {
+    color: #160d02;
+}
+
+/* TÍTULO CENTRAL */
+
+.titulo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.titulo h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 38px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    white-space: nowrap;
+}
+
+/* ASSINATURA */
+
+.assinatura {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    font-size: 13px;
+    color: #888888;
+    line-height: 1.4;
+}
+
+/* PRIMEIRO TEXTO */
+
+/*.apresentação {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+
+    padding: 45px 26%;
+    gap: 25px;
+    color: #000000;
+    max-width: 2300px;
+   
+    margin: 0 auto;
+    
+}*/
+
+.apresentação {
+    display: grid;
+    grid-template-columns: 350px 450px;
+    align-items: center;
+    justify-content: center;
+
+    /*max-width: 950px;
+    margin: 0 auto;
+    padding: 30px 10px;
+
+    gap: 8px;
+    color: #000000;*/
+}
+
+.título-principal h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(30px, 4vw, 55px);
+    font-weight: 545;
+    line-height: 1.20;
+    padding: 40px;
+    transform: translateX(-50px);
+    color: #160d02;
+    
+}
+
+.frase {
+    max-width: 250px;
+    justify-self: center;
+    grid-template-columns: 100px 100px;
+}
+
+.frase p {
+    font-size: 17px;
+    line-height: 1.8;
+    color: #160d02;
+    width: 600px;
+    transform: translateX(-50px);
+    padding: 35px;
+}
+
+.main {
+    color: #ffffff;
+    border-radius: 25px;
+}
+
+/* videos */
+
+.videos {
+    padding: 50px 8%;
+    text-align: center;
+}
+
+.videos h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: #593b2b;
+    margin-bottom: 30px;
+}
+
+.galeria-videos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.galeria-videos video {
+    width: 30%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 1px solid #cbb49d;
+}
+
+/*MOLDURA FOFA*/
+/* PALETA DE CORES */
+:root {
+    --offwhite: #faf6ef;
+    --cafe: #593b2b;
+    --cafe-claro: #9b7359;
+    --bege: #cbb49d;
+}
+
+/* FUNDO DA PÁGINA */
+body {
+    background-color: var(--offwhite);
+    color: var(--cafe);
+}
+
+/* MOLDURA */
+.moldura {
+    position: fixed;
+    inset: 18px;
+    border: 1px solid var(--cafe-claro);
+    pointer-events: none;
+    z-index: 10;
+}
+
+/* DESENHOS */
+.moldura span {
+    position: absolute;
+    color: var(--cafe);
+    background-color: var(--offwhite);
+    padding: 2px 5px;
+    font-size: 17px;
+    line-height: 1;
+}
+
+/* LAÇOS NOS CANTOS */
+.moldura .laco {
+    font-size: 29px;
+    color: var(--cafe);
+}
+
+.canto-superior-esquerdo {
+    top: -15px;
+    left: -9px;
+}
+
+.canto-superior-direito {
+    top: -15px;
+    right: -9px;
+}
+
+.canto-inferior-esquerdo {
+    bottom: -15px;
+    left: -9px;
+}
+
+.canto-inferior-direito {
+    bottom: -15px;
+    right: -9px;
+}
+
+/* TOPO */
+.topo1 {
+    top: -10px;
+    left: 18%;
+}
+
+.topo2 {
+    top: -10px;
+    left: 48%;
+}
+
+.topo3 {
+    top: -10px;
+    right: 18%;
+}
+
+/* LATERAL ESQUERDA */
+.esq1 {
+    top: 18%;
+    left: -10px;
+}
+
+.esq2 {
+    top: 42%;
+    left: -10px;
+}
+
+.esq3 {
+    top: 68%;
+    left: -10px;
+}
+
+.esq4 {
+    top: 85%;
+    left: -10px;
+}
+
+/* LATERAL DIREITA */
+.dir1 {
+    top: 18%;
+    right: -10px;
+}
+
+.dir2 {
+    top: 42%;
+    right: -10px;
+}
+
+.dir3 {
+    top: 68%;
+    right: -10px;
+}
+
+.dir4 {
+    top: 85%;
+    right: -10px;
+}
+
+/* PARTE INFERIOR */
+.baixo1 {
+    bottom: -10px;
+    left: 18%;
+}
+
+.baixo2 {
+    bottom: -10px;
+    left: 48%;
+}
+
+.baixo3 {
+    bottom: -10px;
+    right: 18%;
+}
+
+/* PAGINA 2 */
+
+
+/* PÁGINA PLAYLIST */
+
+.playlist-container {
+    max-width: 1050px;
+    margin: 65px auto;
+    padding: 30px;
+    color: #593b2b;
+}
+
+/* INTRODUÇÃO */
+
+.playlist-intro {
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.playlist-intro .detalhe {
+    color: #9b7359;
+    font-size: 13px;
+    letter-spacing: 3px;
+}
+
+.playlist-intro h2 {
+    font-size: 42px;
+    font-weight: 500;
+    margin: 15px 0;
+}
+
+.playlist-intro p {
+    max-width: 480px;
+    margin: 0 auto;
+    color: #80644f;
+    line-height: 1.8;
+    font-size: 15px;
+}
+
+/* GALERIA */
+
+.galeria-musicas {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 28px;
+}
+
+/* CARTÕES */
+
+.card-musica {
+    position: relative;
+    background: #f2e9dd;
+    border: 1px solid #d6c3ad;
+    border-radius: 14px;
+    padding: 25px;
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.card-musica:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px #593b2b18;
+}
+
+.numero-musica {
+    font-size: 12px;
+    color: #a08369;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.card-musica h3 {
+    font-size: 19px;
+    color: #593b2b;
+    margin-bottom: 8px;
+}
+
+.dedicatoria {
+    font-size: 13px;
+    color: #80644f;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+/* PLAYER SPOTIFY */
+
+.card-musica iframe {
+    display: block;
+    border: none;
+    border-radius: 12px;
+}
+
+/* RODAPÉ */
+
+.playlist-footer {
+    text-align: center;
+    margin-top: 60px;
+    color: #9b7359;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+
+/* GALERIA */
+
+.pagina-galeria {
+    background-color: #f8f4ed;
+    padding: 65px 8%;
+    min-height: 100vh;
+}
+
+.introducao-galeria {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.subtitulo-galeria {
+    color: #98745f;
+    letter-spacing: 4px;
+    font-size: 12px;
+}
+
+.introducao-galeria h1 {
+    color: #49352c;
+    font-size: 34px;
+    margin: 18px 0;
+    font-family: Georgia, serif;
+}
+
+.introducao-galeria p {
+    color: #806b60;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.grade-fotos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.item-foto {
+    overflow: hidden;
+    aspect-ratio: 1 / 1;
+    border-radius: 12px;
+    cursor: pointer;
+    background-color: #e8ded2;
+    box-shadow: 0 4px 12px rgba(73, 53, 44, 0.08);
+}
+
+.item-foto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.item-foto:hover img {
+    transform: scale(1.07);
+}
+
+.rodape-galeria {
+    text-align: center;
+    margin-top: 55px;
+    color: #98745f;
+    font-family: Georgia, serif;
+    font-style: italic;
+}
+
+/* FOTO AMPLIADA */
+
+.visualizador {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(35, 25, 21, 0.94);
+    z-index: 9999;
+    align-items: center;
+    justify-content: center;
+}
+
+.visualizador.ativo {
+    display: flex;
+}
+
+.visualizador img {
+    max-width: 75%;
+    max-height: 80vh;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.fechar-foto {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 42px;
+    cursor: pointer;
+}
+
+.navegar {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+    padding: 15px;
+}
+
+.anterior {
+    left: 20px;
+}
+
+.proxima {
+    right: 20px;
+}
+
+#contadorFotos {
+    position: absolute;
+    bottom: 25px;
+    color: white;
+    font-size: 14px;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 700px) {
+
+    .grade-fotos {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .pagina-galeria {
+        padding: 40px 5%;
+    }
+
+    .introducao-galeria h1 {
+        font-size: 26px;
+    }
+
+    .visualizador img {
+        max-width: 85%;
+        max-height: 70vh;
+    }
+
+    .navegar {
+        font-size: 25px;
+    }
+
+    .anterior {
+        left: 0;
+    }
+
+    .proxima {
+        right: 0;
+    }
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 650px) {
+    .galeria-musicas {
+        grid-template-columns: 1fr;
+    }
+
+    .playlist-container {
+        padding: 20px;
+        margin: 35px auto;
+    }
+
+    .playlist-intro h2 {
+        font-size: 32px;
+    }
+}
+
+
+
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 600px) {
+
+    .cabecalho {
+        padding: 12px 10px;
+        min-height: 65px;
+    }
+
+    .menu {
+        gap: 10px;
+    }
+
+    .menu a {
+        font-size: 8px;
+    }
+
+    .titulo h1 {
+        font-size: 13px;
+        letter-spacing: 0.5px;
+    }
+
+    .assinatura {
+        font-size: 7px;
+    }
+}
+
+@media (max-width: 380px) {
+
+    .assinatura {
+        display: none;
+    }
+
+    .titulo {
+        position: static;
+        transform: none;
+    }
+
+    .cabecalho {
+        justify-content: space-between;
+    }
+}
+        

@@ -1,0 +1,64 @@
+ <!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Fotinhas ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+      <header class="cabecalho">
+          <nav class="menu">
+            <a href="index.html">Início</a>
+            <a href="playlist.html">Playlist</a>
+            <a href="fotos.html">Galeria</a>
+        </nav>
+    </header>
+
+<main class="pagina-galeria">
+
+    <section class="introducao-galeria">
+        <span class="subtitulo-galeria">NOSSAS MEMÓRIAS ♡</span>
+
+        <h1>Um pouquinho da nossa história</h1>
+
+        <p>
+            Juntei algumas das fotos suas que são as minhas favoritas!
+        </p>
+    </section>
+
+    <section class="grade-fotos" id="gradeFotos">
+        <!-- As fotos serão inseridas pelo JavaScript -->
+    </section>
+
+    <p class="rodape-galeria">
+        Feito com carinho, para meu purê de batata. <br>
+        Te amo! ♡
+    </p>
+
+</main>
+
+<!-- VISUALIZAÇÃO AMPLIADA -->
+<div class="visualizador" id="visualizador">
+
+    <button class="fechar-foto" id="fecharFoto">&times;</button>
+
+    <button class="navegar anterior" id="anterior">&#10094;</button>
+
+    <img src="" alt="Foto ampliada" id="fotoAmpliada">
+
+    <button class="navegar proxima" id="proxima">&#10095;</button>
+
+    <span id="contadorFotos"></span>
+
+</div>
+
+<script src="galeria.js"></script>
+  
+    
+</body>
+</html>
